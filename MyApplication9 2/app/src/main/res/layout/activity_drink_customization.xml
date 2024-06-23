@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+    <data>
+        <!-- Declare your variables here -->
+    </data>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/drinkNameTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Drink Name"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="16dp"
+            android:layout_alignParentTop="true"/>
+
+        <ImageView
+            android:id="@+id/drinkImageView"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:scaleType="centerCrop"
+            android:layout_below="@id/drinkNameTextView"
+            android:layout_marginBottom="16dp"/>
+
+        <TextView
+            android:id="@+id/drinkDescriptionTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:layout_below="@id/drinkImageView"
+            android:layout_marginBottom="16dp"/>
+
+        <RadioGroup
+            android:id="@+id/sizeRadioGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/drinkDescriptionTextView"
+            android:layout_marginBottom="16dp">
+
+            <RadioButton
+                android:id="@+id/smallRadioButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Small"/>
+
+            <RadioButton
+                android:id="@+id/mediumRadioButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Medium"/>
+
+            <RadioButton
+                android:id="@+id/largeRadioButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Large"/>
+        </RadioGroup>
+
+        <CheckBox
+            android:id="@+id/strawberryCheckBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/sizeRadioGroup"
+            android:layout_marginTop="18dp"
+            android:text="Strawberry" />
+
+        <CheckBox
+            android:id="@+id/bananaCheckBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/strawberryCheckBox"
+            android:layout_marginTop="11dp"
+            android:text="Banana" />
+
+        <CheckBox
+            android:id="@+id/appleCheckBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Apple"
+            android:layout_below="@id/bananaCheckBox"
+            android:layout_marginTop="16dp"/>
+
+        <Button
+            android:id="@+id/nextButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/appleCheckBox"
+            android:layout_marginTop="0dp"
+            android:text="Next" />
+    </RelativeLayout>
+</layout>

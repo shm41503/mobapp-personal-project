@@ -1,0 +1,3 @@
+Purple Smoothie,purple_smoothie.webp,This is a delicious smoothie made by rasberries,4.5
+Green Smoothie,green_smoothie.webp,This is a healthy made with green apples and spinach,4.0
+Yellow Smoothie,yellow_smoothie.webp,This is a refreshing mango smoothie,4.2
